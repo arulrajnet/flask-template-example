@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//ENhttp://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+<head>
+  <meta charset="iso-8859-1">
+  <meta http-equiv="expires" content="0">
+  <title>Login</title>
+  <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+  <style>
+    html{box-sizing:border-box}*,::before,::after{box-sizing:inherit}body,html{height:100%;margin:0;width:100%}.bg{position:fixed;margin:0;font-family:sans-serif;background:linear-gradient(to bottom right,#6296A3,#1E264A);height:100%;background-position:center;background-repeat:no-repeat;background-size:cover;width:100%;overflow:auto}#navbar,#navbar a,#content{border-radius:0 .5em .5em;border:1px solid;padding:10px;margin:10px}#nav{float:left;width:15em;font-size:.91em;padding:0}#logo{background-image:url(logo.png);width:192px;height:192px;margin-left:10px;margin-top:10px;float:left}#navbar{margin-top:212px;background-color:#fff}#navbar ul{padding:0}#navbar li{list-style:none;margin:0}#navbar a{display:block;padding:.2em 10px;font-weight:700;text-decoration:none;background-color:#e7c157;color:#333}#navbar ul a:hover,#navbar ul a:active{color:#fffbf0;background-color:#dfac20}#content{margin-left:15em;display:block;border-color:#8a9da8;min-width:16em;font-size:.91em;background-color:#fff;overflow:auto}#content h2,#content h1{margin-bottom:.25em}#content button{margin-top:5px;margin-right:5px}#content button.ble_button{width:4em}#message{display:block;border-color:#8a9da8;font-size:.91em;border-radius:0 .5em .5em;border:1px solid;padding:10px;margin-bottom:10px;margin-left:0;margin-top:0;margin-right:0}#message.success{background-color:#6f6}#message.info{background-color:#e5f9ff}#message.warn{background-color:#fffd8c}#message.error{background-color:#ff5154}label{width:12em;display:block;float:left}input{width:12.91em;margin-bottom:.2em}input.pin{width:7em}input.ip{width:3em}input.checkbox{width:1em}table,table td{padding:0;border-spacing:0}table.ble{width:50em}table.ble th{text-align:left}table.ble .name{width:14em}table.ble .address{width:9em}table.ble .type{width:6em}table.ble .pin{width:8em}table.ble .state{width:8em}table.ble .actions{width:10em}table#ble_dev_connected .submit,table#ble_dev_unconnected .submit{width:6em}#progress_bar{margin:10px 0;padding:3px;border:1px solid #000;font-size:14px;opacity:0;-moz-transition:opacity 1s linear;-o-transition:opacity 1s linear;-webkit-transition:opacity 1s linear}#progress_bar.loading{opacity:1}#progress_bar .percent{background-color:#9cf;height:auto;width:0}#progress_bar_ble{margin:10px 0;padding:3px;border:1px solid #000;font-size:14px;opacity:1}#progress_bar_ble .percent{background-color:#9cf;height:14px;position:relative;text-align:left}#progress_bar_ble .text{position:absolute;top:0;left:0;width:200px}#loader{position:absolute;left:50%;top:50%;z-index:1;width:150px;height:150px;margin:-75px 0 0 -75px;border:16px solid #f3f3f3;border-radius:50%;border-top:16px solid #3498db;width:120px;height:120px;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite}#overlay{background-color:rgba(0,0,0,.6);z-index:999;position:absolute;left:0;top:0;width:100%;height:100%;display:none}â€‹ @-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+  </style>
+</head>
+
+<body>
+  <div class="bg">
+    <div id="nav">
+      <div id="logo"></div>
+    </div>
+    <div id="content">
+      <h1>Login</h1>
+      <form action="login" id="login" method="post" autocomplete="off"><label
+          for="current_password">Password:</label><input type="password" name="current_password" maxlength="50" value=""
+          class="current_password"><br><button type="submit" id="submit" name="submit" value="1"
+          class="submit">Login</button></form>
+    </div>
+  </div>
+</body>
+
+</html>
